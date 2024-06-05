@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT
+const port = process.env.PORT
 const cors = require('cors');
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const jwt = require('jsonwebtoken');
@@ -126,7 +126,6 @@ async function run() {
 
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally { 
-    // Optionally close the client connection
   }
 }
 run().catch(console.dir);
