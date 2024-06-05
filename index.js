@@ -134,6 +134,6 @@ app.get('/', (req, res) => {
   res.status(200).send("welcome to server");
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server running on port ${PORT}`);
 });
